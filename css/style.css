@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+}
+
+.container-principal{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../imagens/bg-main-desktop.png);
+    background-repeat: no-repeat;
+}
+
+.frente-cartao{
+    width: 30%;
+    left: 15%;
+    top: 10%;
+    position: absolute;
+}
+
+.fundo-cartao{
+    position: absolute;
+    width: 30%;
+    left: 20%;
+    top: 50%;
+} 
+
+.cartao {
+    width: 100%;
+}
+
+.frente-cartao input, .fundo-cartao input:focus{
+    border: none;
+    outline: none;
+}
+#icons{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+#numero{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, 50%);
+    font-size: 25px;
+    border: none;
+    background: none;
+    color: hsl(0, 0%, 100%);
+}
+#nome{
+    position: absolute;
+    top: 75%;
+    left: 30%;
+    transform: translate(-50%, 50%);
+    font-size: 15px;
+    border: none;
+    background: none;
+    color: hsl(270, 3%, 87%);
+}
+#data{
+    position: absolute;
+    top: 75%;
+    left: 90%;
+    transform: translate(-30%, 50%);
+    font-size: 15px;
+    border: none;
+    background: none;
+    width: 15%;
+    color: hsl(270, 3%, 87%);
+}
+
+#codigo{
+    position: absolute;
+    top: 40%;
+    left: 93%;
+    transform: translate(-30%, 50%);
+    font-size: 15px;
+    border: none;
+    background: none;
+    color: hsl(270, 3%, 87%);
+}
+
+.formulario{
+    position: absolute;
+    top: 50%;
+    left: 53%;
+    transform: translate(10%, -50%);
+    width: 40%;
+}
+
+.formulario label{
+    font-size: 13px;
+    color: hsl(278, 68%, 11%);
+}
+
+.formulario input{
+    font-size: 15px;
+    padding: 9px;
+    border-radius: 7px;
+    margin-top: 3px;
+    border: 1px solid hsl(279, 6%, 55%);
+}
+
+.formulario input:focus{
+    border: 1px solid hsl(278, 68%, 11%);
+    outline: none;
+}
+
+.f_name, .f_cnumber{
+    width: 55%;
+}
+
+.f_date{
+    width: 8%;
+    margin-right: 5px;
+}
+
+#cvc{
+    margin-left: 35px;
+}
+.f_cvc{
+    margin-left: 7px;
+    width: 27%;
+}
+
+#f_submit{
+    width: 58%;
+    padding: 12px;
+    background-color: hsl(278, 68%, 11%);
+    color: hsl(270, 3%, 87%);
+    font-weight:bold
+}
+
+.enviou{
+    display: none;
+}
+.final{
+    display: none;
+}
+.agradecimentos{
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(10%, -50%);
+    text-align: center;
+}
+
+#btn{
+    width: 100%;
+    padding: 12px;
+    background-color: hsl(278, 68%, 11%);
+    color: hsl(270, 3%, 87%);
+    font-weight:bold;
+    border-radius: 7px;
+}
+
+.creditos, a{
+    text-align:end;
+    text-decoration: none;
+    font-size: 15px;
+    margin-right: 10px;
+}
+.link{
+    color: blue;
+}

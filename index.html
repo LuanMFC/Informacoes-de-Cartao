@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título da Página -->
+    <title>Detalhes do Cartão</title>
+
+    <!-- Link da fonte da página -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Link do arquivo css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Logo na guia -->
+    <link rel="icon" href="./imagens/favicon-32x32.png">
+
+    <!-- Link logo do linkedin-->
+    <script src="https://kit.fontawesome.com/0bf4242701.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container-principal">
+        
+        <!-- Cartão, frente e verso -->
+        
+        <div class="frente-cartao">
+            <img src="./imagens/bg-card-front.png" alt="" class="cartao">
+            <img src="./imagens/card-logo.svg" alt="" id="icons">
+
+            <form action="" name="frentec">
+                <input type="text" name="number" id="numero"> 
+                <input type="text" name="name" id="nome" >
+                <input type="text" name="date" id="data" >
+            </form>
+        </div>
+
+        <div class="fundo-cartao">
+            <img src="./imagens/bg-card-back.png" alt="" class="cartao">
+            <form action="" name="fundoc">
+                <input type="text" name="cvc" id="codigo">
+            </form>
+            
+        </div>
+
+
+        <!-- Formulário dos dados do cartão -->
+        <div class="formulario" id="formulario">
+            <form action="" method="post" name="formularioinputs">
+
+                <!-- Nome do titular do cartão-->
+                <label for="f_name">TITULAR DO CARTÃO</label><br>
+                <input type="text" name="f_name" class="f_name" placeholder="JOAOZINHO ZEQUINHA"><br><br>
+
+                <!-- Numero do Cartão -->
+                <label for="f_cnumber">NUMERO DO CARTÃO</label><br>
+                <input type="text" name="f_cnumber" class="f_cnumber" placeholder="XXXX XXXX XXXX XXXX" minlength="19" maxlength="19"><br><br>
+
+                <!-- Label da data do cartao-->
+                <label for="f_date">EXP. DATA (MM/YY)</label>
+
+                <!-- Label do cvc-->
+                <label for="f_cvc" class="f_cvc" id="cvc">CVC</label><br>
+
+                <!-- Input da data do cartao-->
+                <input type="number" name="f_date1" class="f_date" placeholder="XX">
+                <input type="number" name="f_date2" class="f_date yy" placeholder="YY">
+
+                <!-- input do cvc-->
+                <input type="text" name="f_cvc" class="f_cvc" placeholder="e.g. 123"><br><br>
+
+                <input type="button" name="f_submit" id="f_submit" value="Confirmar" onclick="enviar()">
+            </form>
+            
+        </div>
+
+        <div class="final" id="final">
+            <img src="./imagens/icon-complete.svg" alt="">
+            <h1>Obrigado!</h1>
+            <p>Adicionamos os detalhes do seu cartão</p><br><br>
+            <input type="button" value="Continuar" onclick="alterar()" id="btn">
+        </div>
+
+        <div class="creditos">
+            Challege by <a href="https://www.frontendmentor.io/home" class="link">Frontend Mentor</a> || Codado por <a href="https://www.linkedin.com/in/luan-matheus-ferreira-costa-903022214/" class="link">Luan Matheus <i class="fa-brands fa-linkedin link"></i></a>
+        </div>
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
